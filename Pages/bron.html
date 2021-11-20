@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Бронирование визита</title>
+	<meta name="description" content="Document">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="css/main.css">
+	<link href="css/index_style.css" rel="stylesheet">
+	<link href="css/reset2.css" rel="stylesheet">
+</head>
+<body>        
+        <header style="padding-top: 0px;">		
+            <div id="topbar">
+                <div class="container">
+				<div class="logo">
+				<a href=""><img src="Resources/logo3.png" width="100" height="110"alt=""/></a>
+				</div>
+                    <nav>
+                        <ul class="navbar">
+                            <a href="index.html">Главная</a>
+							<div class="dropdown">
+								<div class="dropbtn">Экспозиция
+									<i class="fa fa-caret-down"></i>
+								</div>
+							<div class="dropdown-content">								
+								<a href="index.html">Выставки</a>
+								<a href="index.html">Направления</a>
+								<a href="Gallery.html">Фотографии музея</a>
+								<a href="Quest.html">Квест "Школа спецагента"</a>
+							</div>
+							</div> 
+                            <a href="index.html">Подписка</a>
+							<div class="dropdown">
+								<div class="dropbtn">Кибер-музей
+									<i class="fa fa-caret-down"></i>
+								</div>
+							<div class="dropdown-content">	
+									<a href="About.html">О нас</a>
+									<a href="Contacts.html">Контакты</a>	
+									<a href="Price.html">Цены</a>	
+									<a href="Media.html">Публикации в СМИ</a>	
+							</div>
+							</div>	
+                        </ul>
+                    </nav>
+                </div>
+            </div> 
+
+	<section class="default contacts-bg">
+		<div class="container">
+			<div class="contacts">
+				<div class="contacts__forms">
+
+					<div class="contacts__massage">
+						<img src="img/good.svg" alt="Сообщение">
+						<p class="contacts__info">
+							Бронирование визита произведено успешно! <br>Пожалуйста, проверьте почту, которую вы указали
+						</p>
+						<p class="contacts__info-text">
+							В ближайшее время мы с Вами свяжемся!
+						</p>
+					</div>
+
+					<h2 class="contacts__title">
+						Бронирование визита
+					</h2>
+					<form id="contacts__form">
+						<div class="contacts__form-content">
+							<label class="contacts__form-label">Ваше имя*</label>
+							<input class="contacts__form-input" name="name" type="name" required placeholder="Петр">
+						</div>
+						<div class="contacts__form-content">
+							<label class="contacts__form-label">Email*</label>
+							<input class="contacts__form-input" name="email" type="email" required placeholder="name@something.com">
+						</div>
+						<div class="contacts__form-content">
+							<label class="contacts__form-label">Контактный номер*</label>
+							<input class="contacts__form-input" name="tel" type="tel" required placeholder="+7 (999) 999-99-99">
+						</div>
+						<div class="contacts__form-content">
+							<label class="contacts__form-label">Дата и время* <br></label>
+							<input type="datetime-local" id="localdate" name="date"/>							
+						</div>
+						<br><br>
+						<div class="contacts__btn-box">
+							<button class="contacts__btn" type="submit">Отправить</button>
+						</div>
+					</form>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="js/libs.min.js"></script>
+	<script src="plagins/maskedinput/jquery.maskedinput.min.js"></script>
+	<script src="js/common.js"></script>
+	
+	<footer>
+            <div class="container">
+                <div class="social">					
+                    <a href="https://www.instagram.com/museum.computer/"><i class="fa fa-instagram"></i></a> 
+					<a href="https://www.facebook.com/museum.computer/"><i class="fa fa-facebook"></i></a> <br>
+					<br><a href="http://museum.computer/expo/index.php">* Информация взята с официального сайта Кибер-музея</a>
+                </div>
+                <p class="copyright">© 2020 Created by Tatyana Kupriyanova</p><br><br>
+            </div>
+        </footer>
+        
+        <script src="lightbox/js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>

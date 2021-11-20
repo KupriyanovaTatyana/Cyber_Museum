@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    
+	<head>
+		<title>Цeны</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+		<link href="css/reset2.css" rel="stylesheet">
+        <link href="lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Metal+Mania" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+        <script src="https://use.fontawesome.com/0ca06f29a6.js"></script>
+		<link href="css/Price_style.css" rel="stylesheet">
+	</head>
+    
+    <body>        
+        <header style="padding-top: 50px;">		
+            <div id="topbar">
+                <div class="container">
+				<div class="logo">
+				<a href=""><img src="Resources/logo3.png" width="100" height="110"alt=""/></a>
+				</div>
+                    <nav>
+                        <ul class="navbar">
+                            <a href="index.html">Главная</a>
+							<div class="dropdown">
+								<div class="dropbtn">Экспозиция
+									<i class="fa fa-caret-down"></i>
+								</div>
+							<div class="dropdown-content">								
+								<a href="index.html">Выставки</a>
+								<a href="index.html">Направления</a>
+								<a href="Gallery.html">Фотографии музея</a>
+								<a href="Quest.html">Квест "Школа спецагента"</a>
+							</div>
+							</div> 
+                            <a href="index.html">Подписка</a>
+							<div class="dropdown">
+								<div class="dropbtn">Кибер-музей
+									<i class="fa fa-caret-down"></i>
+								</div>
+							<div class="dropdown-content">	
+									<a href="About.html">О нас</a>
+									<a href="Contacts.html">Контакты</a>	
+									<a href="Price.html">Цены</a>	
+									<a href="Media.html">Публикации в СМИ</a>	
+							</div>
+							</div>	
+                        </ul>
+                    </nav>
+                </div>
+            </div> 	
+<h2>Цены на посещение "Кибер-музея"</h2>
+
+<!-- Contenedor -->
+	<div class="pricing-wrapper clearfix">
+		<!-- Titulo -->
+		<div class="pricing-table">
+			<h3 class="pricing-title">Школьникам</h3>
+			<div class="price">200 руб<sup>/ 1 чел.</sup></div>
+			<!-- Lista de Caracteristicas / Propiedades -->
+			<ul class="table-list">
+				<li><span>До 20 чел - экскурсия по тарифу.</span></li>
+				<li><span>При посещении более 20 чел - экскурсия </span>бесплатно!</li>
+				<li><span>На каждые 10 детей - взрослый сопровождающий </span>бесплатно!</li>
+			</ul>
+			<!-- Contratar / Comprar -->
+			<div class="table-buy">
+				<p>200 руб<sup>/ 1 чел.</sup></p>
+				<a href="bron.html" class="button">Забронировать визит</a>
+			</div>
+		</div>
+		
+		<div class="pricing-table recommended">
+			<h3 class="pricing-title">Взрослым</h3>
+			<div class="price">250 руб<sup>/ 1 чел.</sup></div>
+			<!-- Lista de Caracteristicas / Propiedades -->
+			<ul class="table-list">
+				<li><span>Без гида</span></li>
+				<li><span>Магнит в подарок при размещении фото в Инстаграмме с хештегом </span><span class="unlimited">#кибермузей</span><br></li>
+				<br><br><br><br><br>
+			</ul>
+			<!-- Contratar / Comprar -->
+			<div class="table-buy">
+				<p>250 руб<sup>/ 1 чел.</sup></p>
+				<a href="bron.html" class="button">Забронировать визит</a>
+			</div>
+		</div>
+
+		<div class="pricing-table">
+			<h3 class="pricing-title">Экскурсия</h3>
+			<div class="price">1000 руб<sup>/ группа до 40 чел.</sup></div>
+			<!-- Lista de Caracteristicas / Propiedades -->
+			<ul class="table-list">
+				<li>Дополнительная услуга - <span>профессиональный гид по музею проведет интересную экскурсию и порадует Вас фирменными загадками.</span><br><br></li>
+				<br><br><br><br><br>
+			</ul>
+			<!-- Contratar / Comprar -->
+			<div class="table-buy">
+				<p>1000 руб<sup>/ группа до 40 чел.</sup></p>
+				<a href="bron.html" class="button">Забронировать визит</a>
+			</div>
+		</div>
+	</div>
+		<p style="text-align:center">*Отдельным категориям лиц: Дети дошкольного возраста, дети-сироты, ветераны ВОВ, инвалиды I и II группы - бесплатное посещение Кибер-музея</p>	
+			<!-- The Modal -->
+		<div id="myModal" class="modal">
+
+			<!-- Модальное содержание -->
+			<div class="modal-content">
+				<div class="modal-header">
+					<span class="close">&times;</span>
+					<h2>Забронировать визит</h2>
+				</div>
+				<div class="modal-body" style="padding-top: 0px;">
+					<div class="booking_form">
+						<form action="#">
+							<div class="input_contact">
+								<input type="text" placeholder="Имя">
+								<input type="text" placeholder="Фамилия">
+								<input type="text" placeholder="Е-майл">
+								<input type="text" placeholder="Тел.">
+							</div>
+							<p>
+								<label for="localdate" style="font-size: 18px;font-family: 'Open Sans', sans-serif;">Дата и время: </label>
+								<input type="datetime-local" id="localdate" name="date"/>
+							</p>
+							<div class="submit_button">
+							<input type="submit" value="Отправить">
+							</div>
+						</form>
+					</div>
+
+				</div>
+				<div class="modal-footer">
+					<h3>© 2020 Кибер-музей</h3>
+				</div>
+			</div>
+
+		</div>
+        </header>
+		
+        <footer>
+            <div class="container">
+                <div class="social">					
+                    <a href="https://www.instagram.com/museum.computer/"><i class="fa fa-instagram"></i></a> 
+					<a href="https://www.facebook.com/museum.computer/"><i class="fa fa-facebook"></i></a> <br>
+					<br><a href="http://museum.computer/expo/index.php">* Информация взята с официального сайта Кибер-музея</a>
+                </div>
+                <p class="copyright">© 2020 Created by Tatyana Kupriyanova</p>
+            </div>
+        </footer>
+        <script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn1 = document.getElementById("myBtn1");
+var btn2 = document.getElementById("myBtn2");
+var btn3 = document.getElementById("myBtn3");
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn1.onclick = function() {
+  modal.style.display = "block";
+}
+btn2.onclick = function() {
+  modal.style.display = "block";
+}
+btn3.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+        <script src="lightbox/js/lightbox-plus-jquery.min.js"></script>
+    </body>
+</html>

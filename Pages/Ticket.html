@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+    
+	<head>
+		<title>Билет</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+		
+		<link href="css/reset2.css" rel="stylesheet">
+        <link href="lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Metal+Mania" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+        <script src="https://use.fontawesome.com/0ca06f29a6.js"></script>
+		<link href="css/ticket_style.css" rel="stylesheet">
+		<link href="css/styles.css" rel="stylesheet">
+	</head>
+    
+    <body>        
+        <header style="padding-top: 80px;">		
+            <div id="topbar">
+                <div class="container">
+				<div class="logo">
+				<a href=""><img src="Resources/logo3.png" width="100" height="110"alt=""/></a>
+				</div>
+                    <nav>
+                        <ul class="navbar">
+                            <a href="index.html">Главная</a>
+							<div class="dropdown">
+								<div class="dropbtn">Экспозиция
+									<i class="fa fa-caret-down"></i>
+								</div>
+							<div class="dropdown-content">								
+								<a href="index.html">Выставки</a>
+								<a href="index.html">Направления</a>
+								<a href="Gallery.html">Фотографии музея</a>
+								<a href="Quest.html">Квест "Школа спецагента"</a>
+							</div>
+							</div> 
+                            <a href="#subscribe">Подписка</a>
+							<div class="dropdown">
+								<div class="dropbtn">Кибер-музей
+									<i class="fa fa-caret-down"></i>
+								</div>
+							<div class="dropdown-content">	
+									<a href="About.html">О нас</a>
+									<a href="Contacts.html">Контакты</a>	
+									<a href="Price.html">Цены</a>	
+									<a href="Media.html">Публикации в СМИ</a>	
+							</div>
+							</div>	
+                        </ul>
+                    </nav>
+                </div>
+            </div> 				
+			
+        </header>
+<form class="contact_form" action="#" method="post" name="contact_form">
+    <ul>
+        <li>
+             <h2>Забронировать визит</h2>
+             <span class="required_notification">* Обозначает обязательное поле</span>
+        </li>
+		<form action="send2.php" method="post">
+        <li>
+            <label for="name">Фамилия и имя:</label>
+            <!--<input type="text"  placeholder="Петр Петров" required />
+			<input type="email" required name="email" value="" class="form-control">-->
+			<input type="name" required name="name"placeholder="Петр Петров" value="" class="form-control">
+        </li>
+        <li>
+            <label for="email">Email:</label>
+            <!-- <input type="email" name="email" placeholder="example@mail.ru" required />-->
+			<input type="email" required name="email" placeholder="example@mail.ru" value="" class="form-control">
+            <span class="form_hint">Следуйте формату "name@something.com"</span>
+        </li>
+        <li>
+            <label for="tel">Телефон:</label>
+            <!-- <input type="phone" name="tel" placeholder="+7 650 127 598 89" />-->
+			<input type="tel" required name="tel" placeholder="+7 650 127 598 89" value="" class="form-control">
+        </li>
+        <li>
+            <label for="localdate">Дата и время:</label>
+            <input type="datetime-local" id="localdate" name="date"/>
+        </li>
+        <li>
+        	<input type="submit" name="submit" value="Отправить"  class="btn btn-success" style= "border: 0;
+    background-image: linear-gradient(145deg, #183B67, #7785A8);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: inline-block;"/>
+					</div>
+        </li>
+    </ul>
+	<br><br><br><br>
+</form>
+</form>
+		
+		
+		
+        <form action="send.php" method="post">
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
+
+			<!-- Модальное содержание -->
+			<div class="modal-content">
+				<div class="modal-header">
+					<span class="close">&times;</span>
+					<h2>Забронировать визит</h2>
+				</div>
+				<div class="modal-body" style="padding-top: 0px;">
+					<div class="booking_form">
+						<form action="send2.php" method="post">
+							<div class="form-group">
+							<div class="input_contact">
+								<input type="text" required name="name" placeholder="Имя" value="" class="form-control">
+								<input type="text" required name="familiya" placeholder="Фамилия" value="" class="form-control">
+								<input type="text" required name="email" placeholder="Е-майл" value="" class="form-control">
+								<input type="text" required name="tel" placeholder="Тел." value="" class="form-control">
+							</div>
+							<p>
+								<label for="localdate">Дата и время: </label>
+								<input type="datetime-local" id="localdate" name="date"/>
+							</p>
+							<div class="submit_button">
+							<input type="submit" name="submit2" value="Отправить"class="btn btn-success">
+							</div>
+							</div>
+						</form>
+					</div>
+
+				</div>
+				<div class="modal-footer">
+					<h3>© 2020 Кибер-музей</h3>
+				</div>
+			</div>
+		</div>
+		</form>
+        <footer>
+            <div class="container">
+                <div class="social">					
+                    <a href="https://www.instagram.com/museum.computer/"><i class="fa fa-instagram"></i></a> 
+					<a href="https://www.facebook.com/museum.computer/"><i class="fa fa-facebook"></i></a> <br>
+					<br><a href="http://museum.computer/expo/index.php">* Информация взята с официального сайта Кибер-музея</a>
+                </div>
+                <p class="copyright">© 2020 Created by Tatyana Kupriyanova</p>
+            </div>
+        </footer>
+        		
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+<script>
+$( function() {
+    $( "#datepicker" ).datepicker();
+});
+</script>				
+        <script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+<script>
+//material contact form animation
+$('.contact-form').find('.form-control').each(function() {
+  var targetItem = $(this).parent();
+  if ($(this).val()) {
+    $(targetItem).find('label').css({
+      'top': '10px',
+      'fontSize': '14px'
+    });
+  }
+})
+$('.contact-form').find('.form-control').focus(function() {
+  $(this).parent('.input-block').addClass('focus');
+  $(this).parent().find('label').animate({
+    'top': '10px',
+    'fontSize': '14px'
+  }, 300);
+})
+$('.contact-form').find('.form-control').blur(function() {
+  if ($(this).val().length == 0) {
+    $(this).parent('.input-block').removeClass('focus');
+    $(this).parent().find('label').animate({
+      'top': '25px',
+      'fontSize': '18px'
+    }, 300);
+  }
+})
+</script>
+<script> 
+		$(document).ready(function() { 
+			$("#feedback").submit(function(){ 
+				var form = $(this); 
+				var error = false; 
+				form.find('input, textarea').each( function(){ 
+					if ($(this).val() == '') { 
+						alert('Зaпoлнитe пoлe "'+$(this).attr('placeholder')+'"!');
+						error = true; 
+					}
+				});
+				if (!error) { 
+					var data = form.serialize(); 
+					$.ajax({ 
+						type: 'POST', 
+						url: 'mail.php', 
+						dataType: 'json', 
+						data: data,
+						beforeSend: function(data) { 
+							form.find('input[type="submit"]').attr('disabled', 'disabled'); 
+						},
+						success: function(data){ 
+							if (data['error']) { 
+								alert(data['error']);
+							} else { 
+								alert('Письмo было отправлено, проверьте почту.');
+							}
+						},
+						error: function (xhr, ajaxOptions, thrownError) { 
+							alert(xhr.status); 
+							alert(thrownError);
+						},
+						complete: function(data) {
+							form.find('input[type="submit"]').prop('disabled', false); 
+						}
+				                  
+					     });
+				}
+				return false; // вырубaeм стaндaртную oтпрaвку фoрмы
+			});
+		});
+	</script> 
+
+        <script src="lightbox/js/lightbox-plus-jquery.min.js"></script>
+    </body>
+</html>
